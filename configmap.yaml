@@ -5,7 +5,5 @@ metadata:
 data:
   index.html: |
     <html>
-    <h1>Welcome</h1>
-    </br>
-    <h1>Hi! This is a Stateles Nginx deployment!  </h1>
+    <h1>Hi! This is a Nginx deployment with configmaps!  </h1>
     </html
