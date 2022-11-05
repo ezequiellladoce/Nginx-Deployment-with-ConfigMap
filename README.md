@@ -1,22 +1,22 @@
-# Simple k8s nginx Deploymet configutaed with ConfigMaps
+# Simple k8s Nginx Deploymet with ConfigMaps
 
 ## Objetives
 
-- Deploy a simple stateless nginx application with a Deploymets 
+- Deploy a simple stateless nginx application with a Deploymet 
 - Add a LoadBalancer  service expose the app
-- Use a ConfigMap for configure the index page  
+- Use a ConfigMap to configure the index page  
 
 ## Prerequisites 📋
 
-- A k8s cluster v1.9 or later, for testing porpouses can be minikube (https://minikube.sigs.k8s.io/docs/). You can check de k9s server with the command kubectl version
-- kubectl configured to comunicate with the cluster
+- A k8s cluster v1.9 or later, for testing purposes can be minikube (https://minikube.sigs.k8s.io/docs/). You can check de k8s server with the command kubectl version
+- kubectl configured to communicate with the cluster
   
 ## Starting 🚀
 
 ## Repo description
 
 - deployment.yaml this YAML file describes a Deployment that runs the nginx with 3 replicas
-- service.yaml this YAML file describes a load balancer service that expose the pods created with the deploymet 
+- service.yaml this YAML file describes a load balancer service that  exposes the pods created by the deployment 
 - configmap.yaml this YAML is used to configure the index page for the Nginx
 
 ## Clone the repository 
@@ -45,7 +45,7 @@ Check the deployment
 ```
 kubectl describe deployment nginx-deployment  -n nginx-deployment
 ```
-The information of the depoymet is displayed, the output is similar to that:
+The information of the deployment is displayed, the output is similar to that:
 
 ```
 Name:                   nginx-stateless-deployment
@@ -99,7 +99,7 @@ nginx-stateless-deployment-5597b49c9c-txtjw   1/1     Running   1 (127m ago)   2
 ```
 kubectl apply -f service.yaml -n nginx-deploy
 ```
-Check de service
+Check the service
 ```
 kubectl get svc -n nginx-deployment
 ```
