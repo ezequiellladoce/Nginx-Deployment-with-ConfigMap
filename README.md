@@ -22,7 +22,7 @@
 ## Clone the repository 
 
   ```
-  git clone https://github.com/ezequiellladoce/k8s-stateless-nginx.git
+  git clone https://github.com/ezequiellladoce/Nginx-Deployment-with-ConfigMap.git
   ```
   
 ## Deploy 📦  
